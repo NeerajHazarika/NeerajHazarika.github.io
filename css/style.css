@@ -16,3 +16,13 @@ body {
   font-size: 10rem;
   background: #000;
 }
+
+/* ###### UTILITY CLASS ####### */
+
+.text-white {
+  color: #bcbcbc;
+}
+
+.bg-black {
+  color: #000;
+}
