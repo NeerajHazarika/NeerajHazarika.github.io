@@ -17,7 +17,7 @@ body {
   background: #000;
 }
 
-/* ###### UTILITY CLASS ####### */
+/* ############################################## UTILITY CLASS ######################################### */
 
 .text-white {
   color: #bcbcbc;
@@ -25,4 +25,60 @@ body {
 
 .bg-black {
   color: #000;
+}
+
+/* ################################## HEADER ################################### */
+
+.header {
+  height: 95vh;
+  background: #8e0e00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1f1c18,
+    #8e0e00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1f1c18,
+    #8e0e00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Roboto", sans-serif;
+}
+
+/*###### Nav Bar #####*/
+.navbar {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header .navbar .nav-items {
+  margin: 2rem 1rem;
+}
+
+.item {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  color: #ababab;
 }
