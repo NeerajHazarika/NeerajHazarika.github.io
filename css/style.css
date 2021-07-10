@@ -139,3 +139,111 @@ a {
   display: block;
   clear: both;
 }
+
+/* ####################################### blog ########################################################## */
+
+.blogs {
+  background: #000;
+  height: 500px;
+  padding: 6rem 0rem;
+  margin: 0rem 20rem;
+}
+
+.blog1 {
+  height: 190px;
+  display: inline-block;
+  padding: 3rem;
+  background: #8e0e00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1f1c18,
+    #8e0e00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1f1c18,
+    #8e0e00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blogs .blog1 .blog-img {
+  width: 50%;
+  float: left;
+}
+
+.blogs .blog1 .blog-img img {
+  max-width: 350px;
+  object-fit: cover;
+  margin: 0rem 7rem 0rem 0rem;
+}
+
+.blogs .blog1 .blog-text {
+  float: right;
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.blog1::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blog2 {
+  display: inline-block;
+  margin: 10rem 0;
+  padding: 3rem;
+  height: 200px;
+  background: #8e0e00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1f1c18,
+    #8e0e00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1f1c18,
+    #8e0e00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blogs .blog2 .blog-img {
+  width: 50%;
+  float: right;
+}
+
+.blogs .blog2 .blog-img img {
+  max-width: 350px;
+  object-fit: cover;
+  margin: 0rem 0rem 0rem 7rem;
+}
+
+.blogs .blog2 .blog-text {
+  float: left;
+  width: 50%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.btn2 {
+  display: inline-block;
+  text-decoration: none;
+  background: black;
+  padding: 8px 8px;
+  font-size: 2rem;
+  margin: 1rem 12rem;
+  border-radius: 12px;
+  max-width: 100px;
+}
+
+.btn2:hover {
+  background: #232323;
+  box-shadow: 0px 0px 20px 0px #232323;
+}
+
+.blog2::after {
+  content: "";
+  display: block;
+  clear: both;
+}
