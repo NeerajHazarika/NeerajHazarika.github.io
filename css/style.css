@@ -524,3 +524,19 @@ a {
     margin: 1rem 0 0 0;
   }
 }
+
+@media (max-width: 400px) {
+  * {
+    font-size: 36%;
+  }
+
+  .header {
+    height: 98vh;
+  }
+
+  .btn1 {
+    margin: 2rem auto;
+    font-size: 1.3rem;
+    max-width: 12.5rem;
+  }
+}
