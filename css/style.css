@@ -12,11 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-size: 10rem;
-  background: #000;
-}
-
 /* ######################################## LOADING SCREEN #################################################### */
 
 .loading-screen {
@@ -102,7 +97,7 @@ body {
 /* ################################## HEADER ################################### */
 
 .header {
-  height: 99vh;
+  height: 96vh;
   width: 100vw; /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
@@ -159,11 +154,13 @@ a {
 .img1 {
   width: 40%;
   float: left;
+  margin: 0 0 0 15rem;
 }
 
 .main .img1 img {
   max-width: 300px;
   object-fit: cover;
+  margin: 0 0 0 0rem;
 }
 
 .main .resume {
@@ -210,9 +207,15 @@ a {
 
 .blogs {
   background: #000;
-  height: 500px;
+  height: 31%;
   padding: 6rem 0rem;
   margin: 0rem 20rem;
+}
+
+.blogs-heading {
+  color: #8e0e00;
+  font-size: 11rem;
+  margin: 7rem 0px 6rem 0.5rem;
 }
 
 .blog1 {
@@ -259,7 +262,7 @@ a {
 .blog2 {
   display: inline-block;
   margin: 10rem 0;
-  padding: 3rem;
+  padding: 3rem 2rem 3rem 2rem;
   height: 200px;
   background: #8e0e00; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -275,14 +278,18 @@ a {
 }
 
 .blogs .blog2 .blog-img {
-  width: 50%;
-  float: right;
+  width: 49%;
+  /* float: right; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
 }
 
 .blogs .blog2 .blog-img img {
   max-width: 350px;
   object-fit: cover;
-  margin: 0rem 0rem 0rem 7rem;
+  margin: 2rem 0rem 0rem 0rem;
 }
 
 .blogs .blog2 .blog-text {
@@ -292,13 +299,18 @@ a {
   text-align: center;
 }
 
+.blog2-heading {
+  font-size: 2.5rem;
+  /* text-decoration: wavy; */
+}
+
 .btn2 {
   display: inline-block;
   text-decoration: none;
   background: black;
   padding: 8px 8px;
   font-size: 2rem;
-  margin: 1rem 12rem;
+  margin: 2rem 11rem 2rem 11rem;
   border-radius: 12px;
   max-width: 100px;
 }
@@ -314,10 +326,103 @@ a {
   clear: both;
 }
 
+/* ############################################### PROJECT ############################################# */
+
+.projects {
+  display: flex;
+  width: 80vw;
+  /* border: 2px solid blue; */
+  flex-direction: column;
+  margin: 0rem auto 7rem;
+  height: 80rem;
+  background: black;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-heading {
+  width: 64rem;
+  /* border: 2px solid yellow; */
+  align-self: flex-start;
+  text-align: center;
+  font-size: 11rem;
+  margin: 0 0 0rem 0;
+  color: #8e0e00;
+}
+.project-1 {
+  width: 80rem;
+  height: 26rem;
+  /* border: 2px solid yellow; */
+  display: flex;
+}
+
+.project-2 {
+  width: 80rem;
+  height: 27rem;
+  /* border: 2px solid yellow; */
+  display: flex;
+  /* background: red; */
+}
+
+.project-img {
+  width: 40rem;
+  object-fit: cover;
+  /* border: 2px solid green; */
+  height: 29rem;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  /* border: 2px solid green; */
+  justify-content: space-evenly;
+  background: linear-gradient(to right, #1f1c18, #8e0e00);
+  font-size: 1rem;
+  height: 29rem;
+}
+
+.project-content {
+  /* border: 2px solid red; */
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.project-heading2 {
+  /* border: 2px solid red; */
+  text-align: center;
+  height: 4rem;
+  font-size: 4rem;
+}
+
+.project-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: black;
+  padding: 7px 7px;
+  font-size: 1.5rem;
+  margin: 2% 34%;
+  border-radius: 12px;
+  max-width: 200px;
+  color: white;
+  /* font-weight: 500; */
+}
+
+.project-btn:hover {
+  background: #8e0e005b;
+  box-shadow: 0px 0px 20px 0px #232323;
+}
+
 /* ####################################################### FOOTER ##################################################### */
 
 .footer {
-  margin: 20rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
   background: #8e0e00; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -358,7 +463,7 @@ a {
 
 @media (max-width: 1200px) {
   * {
-    font-size: 40%;
+    font-size: 32%;
     margin: 0;
     padding: 0;
   }
@@ -377,7 +482,7 @@ a {
   }
 
   .main {
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -393,6 +498,7 @@ a {
   .img1 {
     width: 35rem;
     float: none;
+    margin: 0;
   }
 
   .main .img1 img {
@@ -408,7 +514,7 @@ a {
 
   .main .resume .name {
     width: 40rem;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
     margin: 4rem 2rem;
@@ -417,27 +523,27 @@ a {
   .main .resume .intro {
     height: 20rem;
     width: 40rem;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     word-spacing: 0.2em;
     margin: 0 1.5rem;
   }
 
   .btn1 {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     background: black;
     padding: 7px 7px;
-    font-size: 1.5rem;
-    margin: 5rem auto;
+    font-size: 1.8rem;
+    margin: 24rem auto 0;
     border-radius: 12px;
-    width: 92px;
+    width: 18rem;
   }
 
   .blogs {
     width: 50rem;
-    height: 142rem;
-    padding: 30rem 0rem 0rem 0rem;
+    height: 169rem;
+    padding: 5rem 0rem 0rem 0rem;
     margin: 0rem auto;
   }
   .blog1 {
@@ -456,6 +562,15 @@ a {
     width: 25px;
   }
 
+  .blogs .blog2 .blog-img {
+    /* display: flex; */
+    width: 88%;
+    height: 34%;
+    /* border: 2px solid blue; */
+    align-items: center;
+    flex-direction: column;
+  }
+
   .blogs .blog1 .blog-img img {
     max-width: 30rem;
     /* display: block; */
@@ -471,7 +586,7 @@ a {
   }
 
   .blog2 {
-    height: 50rem;
+    height: 43rem;
     width: 40rem;
     display: flex;
     flex-direction: column-reverse;
@@ -488,15 +603,15 @@ a {
   .blogs .blog2 .blog-img img {
     max-width: 30rem;
     /* display: block; */
-    margin: 0rem 0rem 0rem 0rem;
-    transform: translate(-17%, 58%);
+    margin: 1rem 0rem 0rem 0rem;
+    transform: translate(0%, 13%);
   }
 
   .blogs .blog2 .blog-text {
     /* display: block; */
     float: none;
     width: 30rem;
-    margin: 8rem 0rem 0rem 0rem;
+    margin: 3rem 0rem 0rem 0rem;
   }
   .btn2 {
     display: inline-block;
@@ -517,20 +632,50 @@ a {
   .footer {
     margin: 1rem 0 0 0;
   }
+
+  .projects {
+    height: 183rem;
+    /* border: 2px solid blue; */
+    justify-content: space-evenly;
+  }
+
+  .project-heading {
+    /* border: 2px solid blue; */
+    align-self: center;
+    width: 50rem;
+  }
+
+  .project-1 {
+    flex-direction: column;
+    /* margin: 5rem; */
+    width: 44rem;
+    height: 69rem;
+    /* border: 2px solid yellow; */
+    align-items: center;
+  }
+
+  .project-2 {
+    flex-direction: column;
+    /* margin: 5rem; */
+    width: 44rem;
+    height: 69rem;
+    /* border: 2px solid yellow; */
+    align-items: center;
+  }
 }
 
 @media (max-width: 400px) {
   * {
-    font-size: 36%;
+    font-size: 25%;
   }
 
   .header {
-    height: 98vh;
+    height: 94vh;
   }
 
   .btn1 {
-    margin: 2rem auto;
-    font-size: 1.3rem;
-    max-width: 12.5rem;
+    margin: 25rem auto 0;
+    font-size: 1.8rem;
+    max-width: 18rem;
   }
 }
