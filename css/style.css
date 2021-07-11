@@ -345,10 +345,15 @@ a {
   font-size: 1rem;
 }
 
+.social-media-links a {
+  color: black;
+}
+
 .email {
   font-size: 2rem;
   display: flex;
   justify-content: center;
+  color: black;
 }
 
 .footer-icons {
