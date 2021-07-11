@@ -97,7 +97,7 @@ html {
 /* ################################## HEADER ################################### */
 
 .header {
-  height: 96vh;
+  height: 95vh;
   width: 100vw; /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
@@ -384,14 +384,14 @@ a {
 .project-content {
   /* border: 2px solid red; */
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .project-heading2 {
   /* border: 2px solid red; */
   text-align: center;
   height: 4rem;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .project-img img {
@@ -470,6 +470,7 @@ a {
 
   .header {
     width: 100vw;
+    height: 100vh;
   }
 
   .loading-screen {
@@ -482,7 +483,7 @@ a {
   }
 
   .main {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
